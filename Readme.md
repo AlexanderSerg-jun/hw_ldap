@@ -24,12 +24,14 @@
 1.2.6 Для дальнейшей настройки FreeIPA нам потребуется, чтобы DNS-сервер хранил запись о нашем LDAP-сервере. В рамках данной лабораторной работы мы не будем настраивать отдельный DNS-сервер и просто добавим запись в файл /etc/hosts
 vi /etc/hosts
 ![изображение](https://github.com/AlexanderSerg-jun/hw_ldap/assets/85576634/c200f765-7915-47f4-832a-232900e557b0)
-1.2.7.Установим модуль DL1: yum install -y @idm:DL1
+1.2.7.Установим модуль DL1: yum install -y @idm:DL1 и активируем модуль dnf module enable idm:DL1
 
 ![изображение](https://github.com/AlexanderSerg-jun/hw_ldap/assets/85576634/19e94050-02cc-43f2-9e6a-2171398a7432)
+![изображение](https://github.com/AlexanderSerg-jun/hw_ldap/assets/85576634/a9daefe3-4767-4bbf-98fc-a1afa8bb0c6e)
 
-1.2.8. Установим FreeIPA-сервер: yum install -y ipa-server
-![изображение](https://github.com/AlexanderSerg-jun/hw_ldap/assets/85576634/2577074a-fcf7-4e95-9da8-2090faefd4c3)
+1.2.8. Установим FreeIPA-сервер: dnf install -y freeipa-server
+![изображение](https://github.com/AlexanderSerg-jun/hw_ldap/assets/85576634/1d227c31-2a38-452a-a0ac-93f01b8764c1)
+
 
 
 
